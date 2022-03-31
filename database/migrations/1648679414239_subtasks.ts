@@ -10,7 +10,8 @@ export default class Subtasks extends BaseSchema {
       table.integer('task_id').unsigned().references('task.id').onDelete('CASCADE')
       table.integer('status_id').unsigned().references('status.id')
 
-      table.string('description', 255).notNullable()
+      table.string('title',30).notNullable()
+      table.string('description', 255)
 
       table.timestamp('created_at', { useTz: true })
       table.timestamp('updated_at', { useTz: true })

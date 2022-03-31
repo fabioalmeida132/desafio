@@ -10,6 +10,9 @@ export default class Subtask extends BaseModel {
   public taskId: number
 
   @column()
+  public title: string
+
+  @column()
   public description: string
 
   @column.dateTime({ autoCreate: true })

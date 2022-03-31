@@ -10,6 +10,7 @@ export default class Tasks extends BaseSchema {
       table.integer('board_id').unsigned().references('boards.id').onDelete('CASCADE')
       table.integer('status_id').unsigned().references('status.id')
 
+      table.string('title', 30).notNullable()
       table.string('description', 255)
 
       table.timestamp('created_at', { useTz: true })
