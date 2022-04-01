@@ -7,7 +7,10 @@ export default class Board extends BaseModel {
   public id: number
 
   @column()
-  public name: string
+  public title: string
+
+  @column()
+  public description: string
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime

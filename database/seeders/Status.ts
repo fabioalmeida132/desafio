@@ -5,10 +5,10 @@ export default class StatusSeeder extends BaseSeeder {
 
   public async run () {
     await Status.createMany([
+      {status: 'CONCLUÍDA'},
       {status: 'EM DESENVOLVIMENTO'},
-      {status: 'CONCLUÍDO'},
       {status: 'EM ATRASO'},
-      {status: 'CANCELADO'}
+      {status: 'CANCELADA'}
     ])
   }
 }

@@ -28,7 +28,7 @@ export default class Task extends BaseModel {
    /* RELACIONAMENTOS */
 
 
-  // PERTENCE A UM QUADRO
+  // PERTENCE A UM BOARD
   @belongsTo(() => Board)
   public board: BelongsTo<typeof Board>
 

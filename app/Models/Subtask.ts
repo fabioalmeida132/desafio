@@ -10,6 +10,9 @@ export default class Subtask extends BaseModel {
   public taskId: number
 
   @column()
+  public statusId: number
+
+  @column()
   public title: string
 
   @column()

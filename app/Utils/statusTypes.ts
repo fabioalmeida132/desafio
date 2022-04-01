@@ -1,4 +1,4 @@
-const statusTypes = ['EM DESENVOLVIMENTO', 'CONCLUÍDO', 'EM ATRASO','CANCELADO'] as const
+const statusTypes = ['EM DESENVOLVIMENTO', 'CONCLUÍDA', 'EM ATRASO','CANCELADA'] as const
 
 type StatusTypes = typeof statusTypes[number]
 

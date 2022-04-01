@@ -7,7 +7,7 @@ export default class Tasks extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
 
-      table.integer('board_id').unsigned().references('boards.id').onDelete('CASCADE')
+      table.integer('board_id').unsigned().references('boards.id').onDelete('CASCADE').onUpdate('CASCADE')
       table.integer('status_id').unsigned().references('status.id')
 
       table.string('title', 30).notNullable()

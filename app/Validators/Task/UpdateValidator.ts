@@ -6,10 +6,8 @@ export default class StoreValidator {
 
 
   public schema = schema.create({
-    title: schema.string({ trim: true }, [
+    title: schema.string.optional({ trim: true }, [
       rules.maxLength(30),
-      rules.required(),
-      rules.unique({ table: 'boards', column: 'title' })
     ]),
     description: schema.string.optional({ trim: true },[
       rules.maxLength(255),

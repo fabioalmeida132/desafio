@@ -7,7 +7,8 @@ export default class Boards extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
 
-      table.string('name', 255).notNullable()
+      table.string('title', 30).notNullable().unique()
+      table.string('description', 255).nullable()
 
       table.timestamp('created_at', { useTz: true })
       table.timestamp('updated_at', { useTz: true })

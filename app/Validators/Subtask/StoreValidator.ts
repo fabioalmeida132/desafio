@@ -8,12 +8,17 @@ export default class StoreValidator {
   public schema = schema.create({
     title: schema.string({ trim: true }, [
       rules.maxLength(30),
-      rules.required(),
-      rules.unique({ table: 'boards', column: 'title' })
+      rules.required()
     ]),
     description: schema.string.optional({ trim: true },[
       rules.maxLength(255),
-    ])
+    ]),
+    taskId: schema.number([
+      rules.exists({ table: 'tasks', column: 'id' })
+    ]),
+    statusId: schema.number([
+      rules.exists({ table: 'status', column: 'id' })
+    ]),
   })
 
   public messages = {}
