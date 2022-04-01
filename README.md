@@ -39,8 +39,8 @@ http://localhost:3333
 |  PUT               |  /subtask/:id             | Passe por parametro o id e envie no formato json os campos <b>title e description</b>, para atualizar uma subtarefa.|
 |  DELETE               |  /subtask/:id             | Passe por parametro o id da subtarefa, para deletar.|
 |  GET                |  /status/:id            | Lista todos status |
-|  PUT               |  /status/:id             | Passe por parametro o id da tarefa e envie no formato json o campos <b>statusId</b>, para atualizar o status da tarefa.|
-|  PUT               |  /status/:id             | Passe por parametro o id da subtarefa e envie no formato json os campos <b>statusId</b>, para atualizar o status da subtarefa.|
+|  PUT               |  /task/status/:id             | Passe por parametro o id da tarefa e envie no formato json o campos <b>statusId</b>, para atualizar o status da tarefa.|
+|  PUT               |  /subtask/status/:id             | Passe por parametro o id da subtarefa e envie no formato json os campos <b>statusId</b>, para atualizar o status da subtarefa.|
 
 
 > Disclaimer
