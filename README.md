@@ -1,7 +1,9 @@
 # Instruções para rodar a aplicação:
 
+* Ter instalado Node em sua versão 14+
 * Após clonar o projeto, em seu diretório raiz execute o seguinte comando:
 <pre>npm install</pre>
+* Criar no banco de dados um novo schema com o nome do banco desejado.
 * Renomear no diretório raiz o arquivo de <b>.env.example</b> para <b>.env</b> setando as variaveis de ambiente de acordo com as suas configurações MySql.
 * Rodar as migrations com o comando:
 <pre>node ace migration:run</pre>
