@@ -18,8 +18,11 @@ http://localhost:3333
 # Documentação e Disclaimer
 
 > Informações
-* Veja a modelagem do banco através daqui:
-* Versão do Front-end: 
+
+
+* Modelagem do banco
+![alt text](https://i.imgur.com/aDWPU5T.png "Imagem de modelagem banco de dados do desafio proposto")
+* Versão do Front-end: https://github.com/fabioalmeida132/desafio-front (Não era o foco do desafio, porém resolvi aprimorar minhas habilitades com front também. :satisfied:)
 
 
 > Rotas
@@ -50,6 +53,7 @@ O projeto se baseava em desenvolver um backend para criação de quadros. com ta
 
 O projeto inclui:
 
+* Desenvolvido com AdonisJS (Laravel do javascript :laughing: )
 * Rotas em API REST
 * Migrations e Relacionamentos
 * Models e Controllers
