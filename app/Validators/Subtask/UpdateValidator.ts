@@ -11,6 +11,9 @@ export default class StoreValidator {
     ]),
     description: schema.string.optional({ trim: true },[
       rules.maxLength(255)
+    ]),
+    statusId: schema.number.optional([
+      rules.exists({ table: 'status', column: 'id' })
     ])
   })
 
